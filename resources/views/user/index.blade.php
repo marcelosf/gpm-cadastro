@@ -34,24 +34,26 @@
 
                                 <tr scope="row">
                                 
-                                    <td>{{ $user.fullname }}</td>
+                                    <td>{{ $user->fullname }}</td>
 
-                                    <td>{{ $user.email }}</td>
+                                    <td>{{ $user->email }}</td>
 
-                                    <td>{{ $user.picture_file_name }}</td>
+                                    <td>{{ $user->picture_file_name }}</td>
                                 
                                 </tr>
 
                             @endforeach
                         
                         </table>
+
+                        {{ $users->links() }}
                     
                     </div>
                 
                 </div>
             
             </div>
-        
+    
         </div>
     
     </div>
