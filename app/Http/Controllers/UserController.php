@@ -33,4 +33,17 @@ class UserController extends Controller
         return view('user.create');
 
     }
+
+    public function store (Request $request)
+    {
+
+        $path = $request->file('user-picture')->store('pictures');
+
+        $request->merge(['picture_file_name' => $path]);
+
+        $user = $this->user->create($request->all());
+
+        return $user;
+
+    }
 }
