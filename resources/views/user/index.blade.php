@@ -25,6 +25,8 @@
                                     <th scope="coll">E-mail</th>
 
                                     <th scope="coll">Foto</th>
+
+                                    <th scope="coll">Açoes</th>
                                 
                                 </tr>
                             
@@ -38,7 +40,17 @@
 
                                     <td>{{ $user->email }}</td>
 
-                                    <td>{{ $user->picture_file_name }}</td>
+                                    <td><img src="{{ $user->register->picture }}"></td>
+
+                                    <td>
+                                        
+                                        <a href="{{ route('users.show', ['id' => $user->id]) }}" class="btn btn-primary">
+                                        
+                                            Mais...
+                                        
+                                        </a>
+                                    
+                                    </td>
                                 
                                 </tr>
 

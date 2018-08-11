@@ -13,7 +13,10 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
-   .browserSync({
-       proxy: 'workspace',
+   .version();
+   
+mix.browserSync({
+       proxy: 'nginx',
+       port: '3000',
        open: false
-   });
+});

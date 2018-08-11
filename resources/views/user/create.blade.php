@@ -10,7 +10,9 @@
 
         <div class="card-body">
 
-            <form method="POST" action="{{ route('users.store') }}">
+            <form method="POST" enctype="multipart/form-data" action="{{ route('users.store') }}">
+
+                @csrf
             
                 <div class="form-group">
                 
@@ -68,7 +70,7 @@
                         
                             <label for="user-membership-year">Ano de Filiação</label>
 
-                            <input type="text" name="membership-year" id="user-membership-year" class="form-control">
+                            <input type="text" name="membership_year" id="user-membership-year" class="form-control">
                         
                         </div>
 
@@ -76,7 +78,7 @@
                         
                             <label for="user-birht-date">Data de nascimento</label>
 
-                            <input type="text" name="birth-date" id="user-birth-date" class="form-control">
+                            <input type="text" name="birth_date" id="user-birth-date" class="form-control">
                         
                         </div>
 
@@ -100,7 +102,7 @@
                         
                             <label for="user-bloody-type">Tipo Sanguíneo</label>
 
-                            <input type="text" name="bloody-type" id="user-bloody-type" class="form-control">
+                            <input type="text" name="bloody_type" id="user-bloody-type" class="form-control">
                         
                         </div>
 
@@ -108,7 +110,7 @@
                         
                             <label for="user-medical-assurence">Convênio</label>
 
-                            <input type="text" name="medical-assurence" id="user-medical-assurence" class="form-control">
+                            <input type="text" name="medical_assurence" id="user-medical-assurence" class="form-control">
                         
                         </div>
 
@@ -130,7 +132,7 @@
                         
                             <label for="user-cbm-where">Em qual entidade?</label>
 
-                            <input type="text" name="user-cbm-where" id="cbm-where" class="form-control">
+                            <input type="text" name="cbm_where" id="cbm-where" class="form-control">
                         
                         </div>
 
@@ -138,7 +140,7 @@
                         
                             <label for="user-picture">Incluir Foto</label>
 
-                            <input type="file" name="user-picture" id="picture" class="form-control">
+                            <input type="file" name="picture_file_name" id="picture" class="form-control">
                         
                         </div>
 
@@ -146,7 +148,7 @@
                         
                             <label for="user-membership-number">Número GPM</label>
 
-                            <input type="text" name="membership-number" id="user-membership-number" class="form-control">
+                            <input type="text" name="membership_number" id="user-membership-number" class="form-control">
                         
                         </div>
 

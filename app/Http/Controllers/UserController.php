@@ -37,13 +37,38 @@ class UserController extends Controller
     public function store (Request $request)
     {
 
-        $path = $request->file('user-picture')->store('pictures');
+        $path = $request->file('picture_file_name')->store('user_pictures');
 
         $request->merge(['picture_file_name' => $path]);
 
         $user = $this->user->create($request->all());
 
         return $user;
+
+    }
+
+    public function show ($id) 
+    {
+
+        $user = $this->user->find($id);
+
+        return view('user.show', compact('user'));
+
+    }
+
+    /**
+     * Show Edit page
+     * 
+     * $id integer User identification.
+     * 
+     * @return void
+     */
+    public function edit($id)
+    {
+
+        $user = $this->user->find($id);
+
+        return view('user.edit', compact($user));
 
     }
 }
