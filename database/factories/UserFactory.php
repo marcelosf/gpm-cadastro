@@ -21,6 +21,7 @@ $factory->define(Register\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
         'fullname' => $faker->name,
         'rg' => '303030303030',
+        'cpf' => '22222222222',
         'address' => $faker->streetName,
         'address_number' => $faker->buildingNumber,
         'address_complement' => $faker->secondaryAddress,
