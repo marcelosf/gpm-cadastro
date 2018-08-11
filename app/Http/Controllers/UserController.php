@@ -68,7 +68,7 @@ class UserController extends Controller
 
         $user = $this->user->find($id);
 
-        return view('user.edit', compact($user));
+        return view('user.edit', compact('user'));
 
     }
 }
