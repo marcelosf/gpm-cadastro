@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddCpfToUsers extends Migration
+class AddPicturePathToRegister extends Migration
 {
     /**
      * Run the migrations.
@@ -14,9 +14,9 @@ class AddCpfToUsers extends Migration
     public function up()
     {
         
-        Schema::table('users', function(Blueprint $table) {
+        Schema::table('register', function(Blueprint $table) {
 
-            $table->string('cpf')->after('rg');
+            $table->renameColumn('picture', 'picture_path');
 
         });
 

@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * User Controller.
+ * 
+ * PHP version 7.1
+ * 
+ * @category Entities
+ * @package  Register\Entities
+ * @author   Marcelo Schneider <schneider.fei@gmail.com>
+ * @license  http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @link     https://github.com/marcelosf/gpm-cadastro Cadastro GPM
+ */
+
 namespace Register;
 
 use Illuminate\Notifications\Notifiable;
@@ -16,6 +28,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'fullname',
         'email',
         'password' 
     ];

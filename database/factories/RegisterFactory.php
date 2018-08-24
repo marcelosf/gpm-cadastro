@@ -7,6 +7,7 @@ $factory->define(Register::class, function (Faker $faker) {
     return [
         
         'rg' => $faker->randomNumber(4),
+        'cpf' => $faker->randomNumber(8),
         'address' => $faker->streetName,
         'address_number' => $faker->buildingNumber,
         'address_complement' => $faker->secondaryAddress,

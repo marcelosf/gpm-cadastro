@@ -40,7 +40,7 @@
 
                                     <td>{{ $user->email }}</td>
 
-                                    <td><img src="{{ $user->register->picture }}"></td>
+                                    <td><img class="img-thumbnail" width="100" height="200" src="{{ asset('storage/' . $user->register->picture_path) }}"></td>
 
                                     <td>
                                         

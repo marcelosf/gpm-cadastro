@@ -14,13 +14,13 @@
                         
                 <div class="col md-2 sm-2">
 
-                    <img class="img-thumbnail rounded" src="{{ $user->register->picture }}" alt="Foto do sócio">
+                    <img class="img-thumbnail" width="100" height="200" src="{{ asset('storage/' . $user->register->picture_path) }}" alt="foto do sócio"></td>
 
                 </div>
 
                 <div class="col-md-10">
 
-                <h2>{{ title_case($user->name) }} - {{ $user->register->membership_number }}</h2>
+                <h2>{{ title_case($user->fullname) }} - {{ $user->register->membership_number }}</h2>
 
                     <div class="row mt-4">
 

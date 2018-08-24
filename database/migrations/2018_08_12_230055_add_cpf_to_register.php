@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFidFieldsToUser extends Migration
+class AddCpfToRegister extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,13 @@ class AddFidFieldsToUser extends Migration
      */
     public function up()
     {
-        Schema::table('users', function(Blueprint $table) {
+        
+        Schema::table('register', function(Blueprint $table){
 
-            $table->string('phone');
-            $table->year('membership_year');
-            $table->boolean('cbm');
-            $table->string('cbm_where')->nullable();
-            $table->date('birth_date');
-            $table->string('medical_assurence')->nullable();
+            $table->string('cpf')->after('rg');
 
         });
+
     }
 
     /**
