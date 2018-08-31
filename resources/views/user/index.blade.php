@@ -49,6 +49,12 @@
                                             Mais...
                                         
                                         </a>
+
+                                        <a href="{{ route('users.edit', ['id' => $user->id]) }}">
+                                        
+                                            Editar
+                                        
+                                        </a>
                                     
                                     </td>
                                 
