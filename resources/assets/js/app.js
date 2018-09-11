@@ -13,4 +13,6 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require('../../../bower_components/jquery.maskedinput/src/jquery.maskedinput.js');
+
+// Require field masks.
+require('./masks');
