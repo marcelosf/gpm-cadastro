@@ -78,7 +78,7 @@
                         
                             <label for="user-birht-date">Data de nascimento</label>
 
-                            <input type="text" name="birth_date" id="user-birth-date" class="form-control">
+                            <input type="text" name="birth_date" id="user-birth-date" class="form-control date">
                         
                         </div>
 
