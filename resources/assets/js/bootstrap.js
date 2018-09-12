@@ -10,7 +10,7 @@ window.Popper = require('popper.js').default;
 
 try {
     window.$ = window.jQuery = require('jquery');
-
+    require('jquery-mask-plugin');
     require('bootstrap');
 } catch (e) {}
 

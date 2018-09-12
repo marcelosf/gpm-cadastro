@@ -38,7 +38,7 @@
                         
                             <label for="user-phone">Telefone/Celular/Whatsapp</label>
 
-                            <input type="text" id="user-phone" class="form-control" name="phone">
+                            <input type="text" id="user-phone" class="form-control phone" name="phone">
 
                         </div>
 
@@ -70,7 +70,7 @@
                         
                             <label for="user-membership-year">Ano de Filiação</label>
 
-                            <input type="text" name="membership_year" id="user-membership-year" class="form-control">
+                            <input type="text" name="membership_year" id="user-membership-year" class="form-control year">
                         
                         </div>
 
@@ -78,7 +78,7 @@
                         
                             <label for="user-birht-date">Data de nascimento</label>
 
-                            <input type="text" name="birth_date" id="user-birth-date" class="form-control">
+                            <input type="text" name="birth_date" id="user-birth-date" class="form-control date">
                         
                         </div>
 
@@ -86,7 +86,7 @@
                         
                             <label for="user-rg">RG</label>
 
-                            <input type="text" name="rg" id="user-rg" class="form-control">
+                            <input type="text" name="rg" id="user-rg" class="form-control rg">
                         
                         </div>
 
@@ -94,7 +94,7 @@
                         
                             <label for="user-cpf">CPF</label>
 
-                            <input type="text" name="cpf" id="user-cpf" class="form-control">
+                            <input type="text" name="cpf" id="user-cpf" class="form-control cpf">
                         
                         </div>
 

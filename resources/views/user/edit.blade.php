@@ -37,7 +37,7 @@
                     
                         <label for="user-phone">Telefone/Celular/Whatsapp</label>
 
-                        <input type="text" id="user-phone" class="form-control" name="phone" value="{{ $user->register->phone }}">
+                        <input type="text" id="user-phone" class="form-control phone" name="phone" value="{{ $user->register->phone }}">
 
                     </div>
 
@@ -61,7 +61,7 @@
                     
                         <label for="user-cep">CEP</label>
 
-                        <input type="text" id="user-cep" class="form-control" name="zip_code" value="{{ $user->register->zip_code }}">
+                        <input type="text" id="user-cep" class="form-control cep" name="zip_code" value="{{ $user->register->zip_code }}">
                     
                     </div>
 
@@ -85,7 +85,7 @@
                     
                         <label for="user-membership-year">Ano de Filiação</label>
 
-                        <input type="text" name="membership_year" id="user-membership-year" class="form-control" value="{{ $user->register->membership_year }}">
+                        <input type="text" name="membership_year" id="user-membership-year" class="form-control year" value="{{ $user->register->membership_year }}">
                     
                     </div>
 
@@ -93,7 +93,7 @@
                     
                         <label for="user-birht-date">Data de nascimento</label>
 
-                        <input type="text" name="birth_date" id="user-birth-date" class="form-control" value="{{ $user->register->birth_date }}">
+                        <input type="text" name="birth_date" id="user-birth-date" class="form-control date" value="{{ $user->register->birth_date }}">
                     
                     </div>
 
@@ -101,7 +101,7 @@
                     
                         <label for="user-rg">RG</label>
 
-                        <input type="text" name="rg" id="user-rg" class="form-control" value="{{ $user->register->rg }}">
+                        <input type="text" name="rg" id="user-rg" class="form-control rg" value="{{ $user->register->rg }}">
                     
                     </div>
 
@@ -109,7 +109,7 @@
                     
                         <label for="user-cpf">CPF</label>
 
-                        <input type="text" name="cpf" id="user-cpf" class="form-control" value="{{ $user->register->cpf }}">
+                        <input type="text" name="cpf" id="user-cpf" class="form-control cpf" value="{{ $user->register->cpf }}">
                     
                     </div>
 
@@ -133,7 +133,7 @@
                     
                         <label for="user-emergency-number">Contato de emergência</label>
 
-                        <input type="text" name="emergency_number" id="user-emergency-number" class="form-control"  value="{{ $user->register->emergency_number }}">
+                        <input type="text" name="emergency_number" id="user-emergency-number" class="form-control phone"  value="{{ $user->register->emergency_number }}">
                     
                     </div>
 
