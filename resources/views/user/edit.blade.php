@@ -109,7 +109,7 @@
                     
                         <label for="user-cpf">CPF</label>
 
-                        <input type="text" name="cpf" id="user-cpf" class="form-control" value="{{ $user->register->cpf }}">
+                        <input type="text" name="cpf" id="user-cpf" class="form-control cpf" value="{{ $user->register->cpf }}">
                     
                     </div>
 
@@ -133,7 +133,7 @@
                     
                         <label for="user-emergency-number">Contato de emergência</label>
 
-                        <input type="text" name="emergency_number" id="user-emergency-number" class="form-control"  value="{{ $user->register->emergency_number }}">
+                        <input type="text" name="emergency_number" id="user-emergency-number" class="form-control phone"  value="{{ $user->register->emergency_number }}">
                     
                     </div>
 
