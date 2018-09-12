@@ -15,4 +15,7 @@ $(document).ready(() => {
     // RG Mask
     $('.rg').mask('99.999.999-A');
 
+    // CPF Mask
+    $('.cpf').mask('999.999.999-99');
+
 });
