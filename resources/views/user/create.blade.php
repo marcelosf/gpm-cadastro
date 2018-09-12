@@ -70,7 +70,7 @@
                         
                             <label for="user-membership-year">Ano de Filiação</label>
 
-                            <input type="text" name="membership_year" id="user-membership-year" class="form-control">
+                            <input type="text" name="membership_year" id="user-membership-year" class="form-control year">
                         
                         </div>
 
