@@ -86,7 +86,7 @@
                         
                             <label for="user-rg">RG</label>
 
-                            <input type="text" name="rg" id="user-rg" class="form-control">
+                            <input type="text" name="rg" id="user-rg" class="form-control rg">
                         
                         </div>
 
