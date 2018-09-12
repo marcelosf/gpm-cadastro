@@ -38,7 +38,7 @@
                         
                             <label for="user-phone">Telefone/Celular/Whatsapp</label>
 
-                            <input type="text" id="user-phone" class="form-control" name="phone">
+                            <input type="text" id="user-phone" class="form-control phone" name="phone">
 
                         </div>
 
