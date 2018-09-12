@@ -36605,7 +36605,10 @@ $(document).ready(function () {
     $('.date').mask('99/99/999');
 
     // RG Mask
-    $('.rg').mask('99999999-99');
+    $('.rg').mask('99.999.999-A');
+
+    // CPF Mask
+    $('.cpf').mask('999.999.999-99');
 });
 
 /***/ }),
