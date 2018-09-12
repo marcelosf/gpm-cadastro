@@ -94,7 +94,7 @@
                         
                             <label for="user-cpf">CPF</label>
 
-                            <input type="text" name="cpf" id="user-cpf" class="form-control">
+                            <input type="text" name="cpf" id="user-cpf" class="form-control cpf">
                         
                         </div>
 
