@@ -14,7 +14,7 @@
 
                 @csrf
             
-                @include('Form.user')
+                @include('Forms.user')
             
             </form>
         
