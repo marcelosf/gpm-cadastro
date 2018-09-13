@@ -93,7 +93,7 @@
                     
                         <label for="user-birht-date">Data de nascimento</label>
 
-                        <input type="text" name="birth_date" id="user-birth-date" class="form-control date" value="{{ $user->register->birth_date }}">
+                        <input type="text" name="birth_date" id="user-birth-date" class="form-control date" value="{{ $user->register->birth_date->format('d/m/Y') }}">
                     
                     </div>
 
