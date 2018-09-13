@@ -149,7 +149,7 @@ class UserController extends Controller
 
         $user->update($request->all());
 
-        $user->register()->update($request->except($this->registerExcept));
+        $user->register->update($request->except($this->registerExcept));
 
         return redirect()->route('users.index');
 
