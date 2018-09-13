@@ -36602,7 +36602,7 @@ $(document).ready(function () {
     $('.year').mask('9999');
 
     // Date Mask
-    $('.date').mask('99/99/999');
+    $('.date').mask('99/99/9999');
 
     // RG Mask
     $('.rg').mask('99.999.999-A');

@@ -5,6 +5,7 @@ namespace Register\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
+use Carbon\Carbon;
 
 /**
  * Class Register.
@@ -45,12 +46,23 @@ class Register extends Model implements Transformable
 
     ];
 
+    protected $dates = ['created_at', 'updated_at', 'birth_date'];
+
     protected $table = 'register';
 
     public function user() 
     {
 
         $this->belongsTo('Register\User');
+
+    }
+
+    public function setBirthDateAttribute($date)
+    {
+
+        $date = Carbon::createFromFormat('d/m/Y', $date);
+
+        $this->attributes['birth_date'] = $date->format('Y-m-d');
 
     }
 
