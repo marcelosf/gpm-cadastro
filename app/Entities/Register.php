@@ -45,6 +45,8 @@ class Register extends Model implements Transformable
 
     ];
 
+    protected $dates = ['created_at', 'updated_at', 'birth_date'];
+
     protected $table = 'register';
 
     public function user() 
