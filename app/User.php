@@ -27,7 +27,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
         'fullname',
         'email',
         'password' 
@@ -43,7 +42,7 @@ class User extends Authenticatable
     ];
 
 
-    public function register ()
+    public function register()
     {
 
         return $this->hasOne('Register\Entities\Register');
