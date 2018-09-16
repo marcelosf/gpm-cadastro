@@ -164,7 +164,7 @@
 
         <div class="form-group col-md-6">
         
-            <label for="user-picture">Modificar Foto</label>
+            <label for="user-picture">Foto</label>
 
             <input type="file" name="picture" id="user-picture" class="form-control" >
         
