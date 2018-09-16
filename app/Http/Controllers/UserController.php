@@ -92,9 +92,11 @@ class UserController extends Controller
     public function store(Request $request)
     {
 
-        $user = $this->user->create($this->_storeFile($request)->all());
+        $request = $this->_storeFile($request);
 
-        return $user;
+        $this->user->create($request->all());
+
+        return redirect()->route('users.index');
 
     }
 
