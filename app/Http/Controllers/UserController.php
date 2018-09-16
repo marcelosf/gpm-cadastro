@@ -83,24 +83,6 @@ class UserController extends Controller
     }
 
     /**
-     * Store a new User to the database.
-     * 
-     * @param Illuminate\Http\Request $request Http request.
-     * 
-     * @return Register\Entities\User
-     */
-    public function store(Request $request)
-    {
-
-        $request = $this->_storeFile($request);
-
-        $this->user->create($request->all());
-
-        return redirect()->route('users.index');
-
-    }
-
-    /**
      * Show User data.
      * 
      * @param integer $id User Id
