@@ -78,7 +78,7 @@ class UserController extends Controller
     public function create() 
     {
 
-        return view('user.create');
+        return redirect()->route('register');
 
     }
 
