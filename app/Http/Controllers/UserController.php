@@ -78,23 +78,7 @@ class UserController extends Controller
     public function create() 
     {
 
-        return view('user.create');
-
-    }
-
-    /**
-     * Store a new User to the database.
-     * 
-     * @param Illuminate\Http\Request $request Http request.
-     * 
-     * @return Register\Entities\User
-     */
-    public function store(Request $request)
-    {
-
-        $user = $this->user->create($this->_storeFile($request)->all());
-
-        return $user;
+        return redirect()->route('register');
 
     }
 

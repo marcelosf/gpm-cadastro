@@ -2,7 +2,7 @@
             
     <div class="form-row align-items-center">
     
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-4">
         
             <label for="user-fullname" id="fullname">Nome Completo</label>
 
@@ -10,11 +10,19 @@
         
         </div>
 
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-4">
         
             <label for="user-email">E-mail</label>
 
             <input type="email" class="form-control" id="user-email" name="email" value="{{ isset($user) ? $user->email : '' }}">
+        
+        </div>
+
+        <div class="form-group col-md-4">
+        
+            <label for="user-password">Senha</label>
+
+            <input type="password" class="form-control" id="user-password" name="password">
         
         </div>
 
@@ -156,7 +164,7 @@
 
         <div class="form-group col-md-6">
         
-            <label for="user-picture">Modificar Foto</label>
+            <label for="user-picture">Foto</label>
 
             <input type="file" name="picture" id="user-picture" class="form-control" >
         
